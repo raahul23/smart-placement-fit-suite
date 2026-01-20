@@ -1,0 +1,94 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Smooth UI transitions everywhere */
+* {
+  transition: all 0.25s ease;
+}
+
+/* Premium AI Gradient Background */
+body {
+  background:
+    radial-gradient(circle at 20% 20%, rgba(59, 130, 246, 0.18), transparent 40%),
+    radial-gradient(circle at 80% 20%, rgba(168, 85, 247, 0.18), transparent 40%),
+    radial-gradient(circle at 50% 80%, rgba(14, 165, 233, 0.15), transparent 45%),
+    #000;
+  background-attachment: fixed;
+  color: white;
+  font-family: ui-sans-serif, system-ui;
+}
+
+/* Premium Glassmorphism used across sections */
+.glass-section {
+  @apply bg-white/10 border border-white/20 rounded-2xl p-6 backdrop-blur-xl shadow-xl;
+}
+
+/* Gradient section title */
+.section-title {
+  @apply text-4xl font-extrabold mb-4 bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 text-transparent bg-clip-text drop-shadow-xl tracking-tight;
+}
+
+/* Smooth fade-up animation for results */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px) scale(0.97);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px) scale(1);
+  }
+}
+
+.animate-fadeUp {
+  animation: fadeUp 0.6s ease-out both;
+}
+
+/* Custom Scrollbar (Professional SaaS Look) */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #3b82f6, #a855f7);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.08);
+}
+
+/* Disable textarea ugly resize corner */
+textarea {
+  resize: none;
+}
+
+/* Better inputs look */
+textarea,
+input {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+/* Beautiful glowing focus ring */
+textarea:focus,
+input:focus {
+  box-shadow: 0 0 25px rgba(59, 130, 246, 0.4);
+  border-color: rgba(99, 102, 241, 0.4);
+}
+
+/* Neon Border Animations (Optional premium touch) */
+.neon-border {
+  border: 2px solid transparent;
+  border-radius: 18px;
+  background:
+    linear-gradient(#000, #000) padding-box,
+    linear-gradient(90deg, #3b82f6, #a855f7, #ec4899) border-box;
+}
+
+/* Button hover glow pulse */
+.button-glow:hover {
+  box-shadow: 0 0 25px rgba(168, 85, 247, 0.7),
+    0 0 50px rgba(59, 130, 246, 0.6);
+}

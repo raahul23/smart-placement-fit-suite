@@ -1,0 +1,27 @@
+{
+  "name": "smart-placement-fit-frontend",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "framer-motion": "^11.0.0",
+    "html2canvas": "^1.4.1",
+    "jspdf": "^2.5.1",
+    "next": "14.1.0",
+    "react": "18.2.0",
+    "react-dom": "18.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "25.0.9",
+    "@types/react": "19.2.8",
+    "autoprefixer": "^10.4.23",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^3.4.19",
+    "typescript": "^5.0.0"
+  }
+}
