@@ -2,7 +2,7 @@ from pydantic_ai import Agent
 from app.schemas.analysis import FitAnalysis
 
 fit_agent = Agent(
-    model="openrouter:openai/gpt-4o-mini",
+    model="openai:gpt-4.1-mini",
     output_type=FitAnalysis,
     system_prompt="""
 Compare resume analysis and JD analysis.
